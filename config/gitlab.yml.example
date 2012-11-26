@@ -42,18 +42,18 @@ ldap:
 omniauth:
   # Enable ability for users
   # to login via twitter, google ..
-  enabled: false
+  enabled: true
 
   # IMPORTANT! 
   # It allows user to login without having user account
-  allow_single_sign_on: false
-  block_auto_created_users: true
+  allow_single_sign_on: true
+  block_auto_created_users: false
 
   # Auth providers 
   providers:
-    # - { name: 'google_oauth2', app_id: 'YOUR APP ID',
-    #     app_secret: 'YOUR APP SECRET',
-    #     args: { access_type: 'offline', approval_prompt: '' } }
+    - { name: 'google_oauth2', app_id: '1011623966549.apps.googleusercontent.com',
+        app_secret: 'xxxxxx',
+        args: { access_type: 'online', approval_prompt: '' } }
     # - { name: 'twitter', app_id: 'YOUR APP ID',
     #     app_secret: 'YOUR APP SECRET'}
     # - { name: 'github', app_id: 'YOUR APP ID',
